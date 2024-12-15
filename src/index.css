@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --Light-Cyan: hsl(193, 38%, 86%);
+  --Neon-Green: hsl(150, 35%, 39%);
+
+  --Grayish-Blue: hsl(217, 19%, 38%);
+  --Dark-Grayish-Blue: hsl(217, 19%, 24%);
+  --Dark-Blue: hsl(218, 23%, 16%);
+}
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+  background-image: url("./assets/images/pexels-nida-ss-2147540654-29647424.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-family: "Manrope", serif;
+  font-weight: 800;
+}
+
+@media screen and (min-width: 768px ){
+  body{
+    background-image: url("./assets/images/pexels-kate-988615198-29709742.jpg");
+  }
+}
